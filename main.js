@@ -4,7 +4,7 @@
  * The purpose of this 
  */
 var express = require('express');
-var drive = require('drive');
+var drive = require('robot/drive.js');
 
 var Main = function() {
 	
