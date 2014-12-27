@@ -4,7 +4,6 @@
   "description": "A Node.js application to enable a Robotic platform for Raspberry Pi",
   "dependencies" : {
 	  "pi-gpio" : "0.0.6",
-	  "pi-drive" : "file:./drive.js",
 	  "express" : "latest"
   },
   "scripts": {

@@ -31,3 +31,7 @@ node_modules
 /.jshintrc
 /.project
 /.tern-project
+
+# c9 metadata
+/.c9
+/.c9/*
