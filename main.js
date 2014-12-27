@@ -4,7 +4,6 @@
  * The purpose of this 
  */
 var express = require('express');
-var drive = require('./robot/drive.js');
 
 var Main = function() {
 	
@@ -16,17 +15,15 @@ var Main = function() {
 	var app = express.createServer();
 	
 	self.startServer = function() {
-		self.app.listen(self.port, self.address, function() {
-			console.log('%s: Node server started on %s:%d ...', Date(Date.now()), self.ipaddr, self.port);
-		});
+		self.app.listen(self.port, self.address);
 	};
 	
-	self.app.get('/', function(req, res) {
+	app.get('/', function(req, res) {
 		res.send("Hello World!");
 	})
 	
 };
 
 // Call the main function
-var app = new Main();
-app.startServer();
+var server = new Main();
+server.startServer();

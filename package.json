@@ -4,7 +4,7 @@
   "description": "A Node.js application to enable a Robotic platform for Raspberry Pi",
   "dependencies" : {
 	  "pi-gpio" : "0.0.6",
-	  "express" : "4.9.8"
+	  "express" : "2.5.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
