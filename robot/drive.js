@@ -30,21 +30,21 @@ Drive.prototype.setup = function(left, right) {
 }
 
 Drive.prototype.forward = function() {
-	this.write(left, 1);
-	this.write(right, 1);
+	this.write(this.left, 1);
+	this.write(this.right, 1);
 };
 
 Drive.prototype.backward = function() {
-	this.write(left, 0, 0);
-	this.write(right, 0, 0;)
+	this.write(this.left, 0);
+	this.write(this.right, 0);
 };
 
 Drive.prototype.turnLeft = function() {
-	this.write(left, 0);
-	this.write(right, 1);
+	this.write(this.left, 0);
+	this.write(this.right, 1);
 };
 
 Drive.prototype.turnRight = function() {
-	this.write(left, 1);
-	this.write(right, 0);
+	this.write(this.left, 1);
+	this.write(this.right, 0);
 };
