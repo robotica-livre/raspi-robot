@@ -21,12 +21,10 @@ function Drive(left, right) {
 
 Drive.prototype.setup = function(left, right) {
 	this.left = left;
-	gpio.open(left);
-	gpio.setDirection(left, "output");
+	gpio.open(left, "output");
 	
 	this.right = right;
-	gpio.open(right);
-	gpio.setDirection(right, "output");
+	gpio.open(right, "output");
 }
 
 Drive.prototype.forward = function() {
